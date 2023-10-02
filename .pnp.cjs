@@ -3270,13 +3270,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@nextui-org/system-rsc", "virtual:fcb7d676ba7e63c479164bdb7d41a23738dc36651b4301e1da41a1ad484a4ace09f276e378219557c45e735e1e57465a14b1c6c0ad004867d45c96ee477f0a18#npm:2.0.6"],\
             ["@types/react", "npm:18.2.21"],\
+            ["@types/tailwindcss", null],\
             ["clsx", "npm:1.2.1"],\
             ["react", "npm:18.2.0"],\
-            ["tailwind-variants", "virtual:c75d5bbb0caee957f73b8560a0878c3e04c5bd80040ad274b39fa8174dc447378eccdf93b2354e14a08c8b85687784909f0e2fee1a76f4faffc950621405c4b2#npm:0.1.14"]\
+            ["tailwind-variants", "virtual:c75d5bbb0caee957f73b8560a0878c3e04c5bd80040ad274b39fa8174dc447378eccdf93b2354e14a08c8b85687784909f0e2fee1a76f4faffc950621405c4b2#npm:0.1.14"],\
+            ["tailwindcss", null]\
           ],\
           "packagePeers": [\
             "@types/react",\
-            "react"\
+            "@types/tailwindcss",\
+            "react",\
+            "tailwindcss"\
           ],\
           "linkType": "HARD"\
         }]\

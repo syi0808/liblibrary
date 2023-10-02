@@ -6,6 +6,10 @@
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
+    "image-build": {},
+    "image-push": {
+      "dependsOn": ["image-build"]
+    },
     "lint": {},
     "dev": {
       "cache": false,
