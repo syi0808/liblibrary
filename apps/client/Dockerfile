@@ -25,7 +25,7 @@ COPY apps/${APP}/package.json /app/apps/${APP}/package.json
 
 RUN \
       --mount=type=cache,target=/usr/local/share/.cache/yarn/v6,sharing=locked \
-      yarn install --immutable
+      yarn install
 
 COPY --from=pruned /app/out/full/ .
 COPY turbo.json turbo.json
