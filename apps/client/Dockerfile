@@ -17,7 +17,7 @@ WORKDIR /app
 ARG APP=client
 
 COPY .yarn ./.yarn
-COPY .pnp.cjs .yarnrc.yml /app
+COPY .pnp.cjs .yarnrc.yml /app/
 COPY --from=pruned /app/out/json/ .
 COPY --from=pruned /app/out/yarn.lock /app/yarn.lock
 
